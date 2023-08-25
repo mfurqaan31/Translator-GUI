@@ -43,7 +43,7 @@ def clear():
     translated_text.config(state=DISABLED)
     combo.place_forget()
     Label3.place_forget()
-    Label6.place_forget()
+    #Label6.place_forget()
     record_button.place_forget()
     translated_combo.set("")
     combo.set("")
@@ -71,9 +71,12 @@ def ask_recording():
 
 
 def Record():
-    
+
+    def reset():
+        Label6.place_forget()
+
     recognizer = sr.Recognizer()
-    
+    Label6=Label(root, text="Silence detected. Stopping.",bg="black",fg="#cfff04", font=40)
     with sr.Microphone() as source:
         for key,value in languages.items():
             if(value==( combo.get() ) ):
@@ -81,7 +84,6 @@ def Record():
         
         try:
             audio = recognizer.listen(source, timeout=None, phrase_time_limit=None)
-
             text = recognizer.recognize_google(audio, language=translate_to)
             translated_text.config(state=NORMAL)
             translated_text.delete(1.0,END)
@@ -93,7 +95,7 @@ def Record():
         except Exception :
             messagebox.showerror("Error","Something went wrong please try again")
 
-        
+    root.after(3000, reset)
 
 
 def Play_audio():
@@ -115,17 +117,15 @@ def Play_audio():
     except Exception :
         messagebox.showerror("Error","Something went wrong please try later")
 
-    
-
-
 
 
 languages=googletrans.LANGUAGES
 lang_list= list(languages.values())
 
 
-Label1=Label(root, text="Auto Detect",bg="black",fg="#cfff04",font=30)
-Label1.place(x=5,y=15)
+Label1=Label(root, text="Auto Detect:",bg="black",fg="#cfff04",font=30)
+Label1.place(x=10,y=15)
+
 
 primary_text=scrolledtext.ScrolledText(root, height=10, width=50, wrap=WORD, font=50)
 primary_text.grid(row=1, column=0, pady=40, padx=10)
@@ -164,7 +164,5 @@ combo=ttk.Combobox(root, width=20, value=lang_list)
 Label3=Label(root, text="Select Language",bg="black",fg="#cfff04",font=30)
 
 record_button=Button(root, text="By voice", bg="black", fg="#cfff04", font=8,command=Record)
-
-Label6=Label(root, text="Silence detected. Stopping.",bg="black",fg="#cfff04", font=40)
 
 root.mainloop()
