@@ -30,6 +30,7 @@ python Translator.py
 
 # Screenshots
 ![SC1](https://github.com/mfurqaan31/Translator-GUI/assets/141869941/8550c35b-e544-4cb7-bc15-b41c69dc98a9)
+
 ![SC2](https://github.com/mfurqaan31/Translator-GUI/assets/141869941/bb4c3046-96e5-455f-b729-2b90571b2c9e)
 
 
