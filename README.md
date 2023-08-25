@@ -2,10 +2,10 @@
 - A GUI Python program for translating text or speech.
 - It uses the follwing libraries: <br>
 
-`Googletrans` to translate from one language to another<br> 
-`Gtts`to convert text to speech <br>
-`Speech_Recognition` to record sound from the user <br>
-`Playsound` to play the output file of the gtts
+1. `Googletrans` to translate from one language to another<br> 
+2. `Gtts`to convert text to speech <br>
+3. `Speech_Recognition` to record sound from the user <br>
+4. `Playsound` to play the output file of the gtts
 
 # Installation
 -To run this application, you need to have Python 3.x installed on your system. You can download Python from the official website: https://www.python.org/downloads/.
