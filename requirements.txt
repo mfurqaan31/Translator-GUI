@@ -3,3 +3,9 @@ googletrans
 gTTS
 playsound
 SpeechRecognition
+pyaudio
+google-trans-new
+langdetect
+goslate
+pyttsx3
+tdqm
