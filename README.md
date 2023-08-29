@@ -32,6 +32,7 @@ python Translator.py
 <img src="sc1.png">
 
 <img src="sc2.png">
+
 # Follow me and Star ⭐ my Repository
 
 # Thank You!
