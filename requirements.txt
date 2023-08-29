@@ -1,10 +1,9 @@
 tkinter
-googletrans
+googletrans==3.1.0a0
 gTTS
 playsound
 SpeechRecognition
 pyaudio
-google-trans-new
 langdetect
 goslate
 pyttsx3
