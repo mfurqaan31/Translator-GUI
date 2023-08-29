@@ -29,11 +29,9 @@ python Translator.py
 -In addition the "Clear" button clears all the previous data, the "Copy text" copies the translated text into the clipboard, the "Audio" button plays the translated text in the form of audio and the "Quit" button to exit the window.
 
 # Screenshots
-![SC1](https://github.com/mfurqaan31/Translator-GUI/assets/141869941/8550c35b-e544-4cb7-bc15-b41c69dc98a9)
+<img src="sc1.png">
 
-![SC2](https://github.com/mfurqaan31/Translator-GUI/assets/141869941/bb4c3046-96e5-455f-b729-2b90571b2c9e)
-
-
+<img src="sc2.png">
 # Follow me and Star ⭐ my Repository
 
 # Thank You!
